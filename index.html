@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Diabetic Retinopathy</title>
+<!--
+
+TemplateMo 558 Klassy Cafe
+
+https://templatemo.com/tm-558-klassy-cafe
+
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../static/css/templatemo-klassy-cafe.css">
+
+    <link rel="stylesheet" href="../static/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="../static/css/lightbox.css">
+
+    </head>
+
+    <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="left-content">
+                        <div class="inner-content">
+                            <h4>Classification Of Diabetic Retinopathy</h4>
+                            <h6></h6>
+                            <p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+
+
+<form method="post" action="/" enctype="multipart/form-data">
+
+			 <input type="file" name="file" autocomplete="off" required onchange="loadFile(event)" >
+
+		<input  type="submit" value="Predict"><a href="https://www.google.com/intl/en_in/drive/" target="_blank"><img src="https://icons.iconarchive.com/icons/marcus-roberto/google-play/48/Google-Drive-icon.png" style="width:42px;height:42px;"></a>
+
+
+
+<a href="https://github.com/IBM-EPBL/IBM-Project-4307-1658728397" target="_blank"><img src="https://icons.iconarchive.com/icons/limav/flat-gradient-social/48/Github-icon.png" style="width:42px;height:42px;"></a>
+    <br><h6>©INFO INSTITUTE OF ENGINEERING</h6><br><img id="output"/>
+		<h2>{{text}}</h2>
+
+
+
+
+
+
+
+
+
+
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+    }
+  };
+</script>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="main-banner header-text">
+                        <div class="Modern-Slider">
+                          <!-- Item -->
+                          <div class="item">
+                            <div class="img-fill">
+                                <img src="../static/images/slide-01.jpg" alt="">
+                            </div>
+                          </div>
+                          <!-- // Item -->
+                          <!-- Item -->
+                          <div class="item">
+                            <div class="img-fill">
+                                <img src="../static/images/slide-02.jpg" alt="">
+                            </div>
+                          </div>
+                          <!-- // Item -->
+                          <!-- Item -->
+                          <div class="item">
+                            <div class="img-fill">
+                                <img src="../static/images/slide-03.jpg" alt="">
+                            </div>
+                          </div>
+                          <!-- // Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+
+
+    <!-- jQuery -->
+    <script src="../static/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../static/js/popper.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="../static/js/owl-carousel.js"></script>
+    <script src="../static/js/accordions.js"></script>
+    <script src="../static/js/datepicker.js"></script>
+    <script src="../static/js/scrollreveal.min.js"></script>
+    <script src="../static/js/waypoints.min.js"></script>
+    <script src="../static/js/jquery.counterup.min.js"></script>
+    <script src="../static/js/imgfix.min.js"></script>
+    <script src="../static/js/slick.js"></script>
+    <script src="../static/js/lightbox.js"></script>
+    <script src="../static/js/isotope.js"></script>
+
+    <!-- Global Init -->
+    <script src="../static/js/custom.js"></script>
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+
+            });
+        });
+
+    </script>
+    <style>
+input[type=file], input[type=submit] {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  color: #fb5849;
+  padding: 12px 25px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: 600;
+}
+</style>
+  </body>
+</html>
